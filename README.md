@@ -10,6 +10,7 @@ I approach cybersecurity from a systems perspective — aiming to understand how
 ##  Areas of Focus
 - Cybersecurity (network analysis, exploitation fundamentals, system security)
 - Linux and operating systems internals
+- Networking
 - Algorithms & Data Structures
 - Mathematical foundations for computer science (discrete math, logic, linear algebra)
 
