@@ -1,0 +1,19 @@
+{
+  "assignment": "9",
+  "problem_1": {
+      "Which variable holds the byte code?": "",
+      "Which variable holds the stack?": "",
+      "Which variable holds the stack pointer?": "",
+      "Which variable holds the program counter?": "",
+      "Which obfuscated opcode is SET_VAR_ZERO?": "F_??",
+      "Which obfuscated opcode is STORE?": "F_??",
+      "Which obfuscated opcode is SUB?": "F_??",
+      "Which obfuscated opcode is SUB_ONE?": "F_??",
+      "Which obfuscated opcode is BNOT?": "F_??",
+      "Which obfuscated opcode is PUSH_VAR?": "F_??",
+      "Which obfuscated opcode is BRANCH_IF_LE_ZERO?": "F_??",
+      "Which obfuscated opcode is PRINT?": "F_??",
+      "Which obfuscated opcode is RETURN?": "F_??",
+      "Which obfuscated opcode is GOTO?": "F_??"
+  }
+}

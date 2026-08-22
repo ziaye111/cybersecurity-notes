@@ -1,0 +1,88 @@
+graph call {
+    /* Function Node */
+    func [label="function\ncollatz"; shape="ellipse"; fillcolor="#E6E6FA"; style="filled"];
+
+    /* Body Block */
+    body [label="Block"; shape="box"; fillcolor="#F5F5DC"; style="filled"];
+    func -- body;
+
+    /* 1. int count = 0 */
+    set_count [label="Set"; shape="box"];
+    count_var [label="count\ntp:int"; shape="ellipse"];
+    zero [label="0\ntp:int"; shape="ellipse"];
+    body -- set_count;
+    set_count -- count_var [label="left"];
+    set_count -- zero [label="right"];
+
+    /* 2. While Loop */
+    loop [label="Loop"; shape="diamond"; fillcolor="#FFE4E1"; style="filled"];
+    body -- loop;
+
+    /* Loop Condition: n > 1 */
+    cond_gt [label="binop\n>"; shape="box"];
+    loop -- cond_gt [label="cond"];
+    n_var1 [label="n"; shape="ellipse"];
+    one [label="1"; shape="ellipse"];
+    cond_gt -- n_var1 [label="left"];
+    cond_gt -- one [label="right"];
+
+    /* Loop Body */
+    loop_body [label="Block"; shape="box"];
+    loop -- loop_body [label="body"];
+
+    /* If Statement */
+    if_stmt [label="If"; shape="diamond"];
+    loop_body -- if_stmt;
+
+    /* If Condition: n % 2 == 0 */
+    cond_eq [label="binop\n=="; shape="box"];
+    if_stmt -- cond_eq [label="cond"];
+    
+    mod_op [label="binop\n%"; shape="box"];
+    cond_eq -- mod_op [label="left"];
+    cond_eq -- zero [label="right"];
+    
+    n_var2 [label="n"; shape="ellipse"];
+    two [label="2"; shape="ellipse"];
+    mod_op -- n_var2 [label="left"];
+    mod_op -- two [label="right"];
+
+    /* If Then: n = n / 2 */
+    then_block [label="Set"; shape="box"];
+    if_stmt -- then_block [label="then"];
+    n_var3 [label="n"; shape="ellipse"];
+    div_op [label="binop\n/"; shape="box"];
+    then_block -- n_var3 [label="left"];
+    then_block -- div_op [label="right"];
+    div_op -- n_var3 [label="left"];
+    div_op -- two [label="right"];
+
+    /* If Else: n = n * 3 + 1 */
+    else_block [label="Set"; shape="box"];
+    if_stmt -- else_block [label="else"];
+    n_var4 [label="n"; shape="ellipse"];
+    add_op [label="binop\n+"; shape="box"];
+    else_block -- n_var4 [label="left"];
+    else_block -- add_op [label="right"];
+    
+    mul_op [label="binop\n*"; shape="box"];
+    one_else [label="1"; shape="ellipse"];
+    add_op -- mul_op [label="left"];
+    add_op -- one_else [label="right"];
+    
+    three [label="3"; shape="ellipse"];
+    mul_op -- n_var4 [label="left"];
+    mul_op -- three [label="right"];
+
+    /* count++ */
+    inc_count [label="Unop\n++"; shape="box"];
+    loop_body -- inc_count;
+    count_var2 [label="count"; shape="ellipse"];
+    inc_count -- count_var2;
+
+    /* 3. Return */
+    ret_stmt [label="Return"; shape="box"];
+    body -- ret_stmt;
+    ret_count [label="count"; shape="ellipse"];
+    ret_stmt -- ret_count;
+}

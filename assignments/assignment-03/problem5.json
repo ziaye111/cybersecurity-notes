@@ -1,0 +1,10 @@
+{
+  "assignment": 3,
+  "problem_5": {
+     "main":                                  "FUN_XXXXXXXX",
+     "main_calls_this_function":              "FUN_YYYYYYYY",
+     "functions_that_call_FUN_YYYYYYYY":      ["FUN_AAAAAAAA","FUN_BBBBBBBB","FUN_CCCCCCCC","FUN_DDDDDDDD"],
+     "main_references_this_global_variable":  "DAT_ZZZZZZZZ",
+     "functions_that_reference_DAT_ZZZZZZZZ": ["FUN_EEEEEEEE","FUN_FFFFFFFF","FUN_GGGGGGGG"]
+  }
+}

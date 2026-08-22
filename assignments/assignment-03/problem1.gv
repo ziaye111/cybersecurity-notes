@@ -1,0 +1,3 @@
+graph call { 
+   /* Compile with 'dot -Tpng problem1.gv  > problem1.png' */
+} 

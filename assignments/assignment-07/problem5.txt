@@ -1,0 +1,4 @@
+mov    0x2c09(%rip),%eax
+cmp    %eax,-0x18(%rbp)
+cmovle -0x18(%rbp),%eax
+mov    %eax,0x2bfc(%rip)

@@ -1,0 +1,12 @@
+{
+  "assignment": 5,
+  "problem_1": {
+      "attack-description" : [
+	  "Replace this string with a short description of step 1 of the attack here",
+	  "Replace this string with a short description of step 2 of the attack here",
+	  "Replace this string with a short description of step 3 of the attack here",
+	  "...",
+	  "Replace this string with a short description of step n (NOTE: no comma at the end!)"
+      ]
+  }
+}

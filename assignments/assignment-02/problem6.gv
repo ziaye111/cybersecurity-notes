@@ -1,0 +1,6 @@
+digraph problem6 { 
+   node1 [label="ENTRY"];
+   node2 [label="EXIT"];
+
+   node1 -> node2;  
+} 

@@ -1,0 +1,12 @@
+{
+  "assignment": 3,
+  "problem_6": {
+     "a)": "leal A(B,C,D),%ebx",
+     "b)": "leal A(B,C,D),%ebx",
+     "c)": "leal A(B,C,D),%ebx",
+     "d)": [
+        "leal A(B,C,D),%ebx",
+        "leal A(B,C,D),%ebx"
+     ]
+  }
+}

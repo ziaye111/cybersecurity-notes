@@ -1,0 +1,8 @@
+/* Compile with 'dot -Tpng graph.gv > graph.png' */
+
+graph call { /* or digraph for a directed graph */
+   node1 [label="name of node1"; style="filled"; shape="ellipse"; color="black"; fillcolor="#9067A7";];
+   node2 [label="name of node2"; style="filled"; shape="box"; color="black"; fillcolor="#9067A7";];
+
+   node1 -- node2;  /* Or -> for directed graphs. */
+} 

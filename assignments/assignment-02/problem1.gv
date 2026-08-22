@@ -1,0 +1,8 @@
+/* Compile with 'dot -Tpng problem1.gv > problem1.png' */
+
+digraph problem1 { 
+   node1 [label="ENTRY"];
+   node2 [label="EXIT"];
+
+   node1 -> node2;  
+} 
