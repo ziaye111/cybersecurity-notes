@@ -56,3 +56,18 @@ To develop into a computer scientist with strong analytical and practical securi
 
 ## 📌 Note
 This repository reflects ongoing learning. Each commit represents a stage in my understanding and is intentionally preserved as part of the learning process.
+
+---
+
+## 🛡️ ScopeGuard
+
+ScopeGuard is a small, transparent security posture checker I built to turn common web security observations into useful next steps. It checks HTTP security headers, transport choice, and basic TLS connectivity for systems I own or have written permission to assess.
+
+The tool is deliberately read-only. It does not exploit vulnerabilities, brute-force credentials, crawl sites, enumerate ports, bypass controls, or modify target data. Every scan requires an explicit `--i-have-authorization` confirmation.
+
+```bash
+python -m scopeguard https://example.com --i-have-authorization
+python -m scopeguard https://example.com --i-have-authorization --json
+```
+
+The implementation, tests, contribution guide, and responsible-use policy are included in this repository.
