@@ -13,6 +13,7 @@ I approach cybersecurity from a systems perspective — aiming to understand how
 - Networking
 - Algorithms & Data Structures
 - Mathematical foundations for computer science (discrete math, logic, linear algebra)
+- web development 
 
 ---
 
