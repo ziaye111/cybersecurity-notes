@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farms</title>
+</head>
+<body>
+    <h1>My Farms</h1>
+    {% if farms %}
+        <ul>
+            {% for farm in farms %}
+                <li>{{ farm.name }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No farms yet.</p>
+    {% endif %}
+</body>
+</html>

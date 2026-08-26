@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Farm Management Dashboard</h1>
+    <p>Username: {{ user.username }}</p>
+    <p>Role: {{ profile.role }}</p>
+
+    <h2>Summary</h2>
+    <ul>
+        <li>Total Sales: {{ total_sales|floatformat:2 }}</li>
+        <li>Total Expenses: {{ total_expenses|floatformat:2 }}</li>
+        <li>Inventory Activity: {{ total_stock_movements }}</li>
+        <li>Profit: {{ profit|floatformat:2 }}</li>
+    </ul>
+</body>
+</html>

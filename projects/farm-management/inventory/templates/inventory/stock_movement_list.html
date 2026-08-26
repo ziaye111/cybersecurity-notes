@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Movements</title>
+</head>
+<body>
+    <h1>Stock Movements</h1>
+    {% if movements %}
+        <ul>
+            {% for movement in movements %}
+                <li>{{ movement.movement_type }} - {{ movement.product.name }} - {{ movement.quantity }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No stock movements yet.</p>
+    {% endif %}
+</body>
+</html>

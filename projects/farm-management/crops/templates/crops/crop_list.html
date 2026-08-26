@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crops</title>
+</head>
+<body>
+    <h1>Crop Records</h1>
+    {% if crops %}
+        <ul>
+            {% for crop in crops %}
+                <li>{{ crop.name }} - {{ crop.status }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No crops yet.</p>
+    {% endif %}
+</body>
+</html>
